@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it405.college.greenriver.assignment1.AssignmentOneFunction">
+
+    <TextView
+        android:id="@+id/FirstNameBox"
+        android:layout_width="228dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="First Name"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bob"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/FirstNameBox" />
+
+    <TextView
+        android:id="@+id/PhoneNumberBox"
+        android:layout_width="226dp"
+        android:layout_height="29dp"
+        android:text="Phone Number"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextName" />
+
+    <EditText
+        android:id="@+id/EditTextPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="1234567890"
+        android:inputType="number"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumberBox" />
+
+    <TextView
+        android:id="@+id/MessageBox"
+        android:layout_width="219dp"
+        android:layout_height="27dp"
+        android:text="Message"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="-1dp"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextPhoneNumber" />
+
+    <EditText
+        android:id="@+id/EditTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Hello World!"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/MessageBox" />
+
+    <Button
+        android:id="@+id/SubmitButton"
+        android:layout_width="375dp"
+        android:layout_height="64dp"
+        android:textColor="#F2F2F2"
+        android:background="#4F4F4F"
+        android:textSize="18sp"
+        android:text="Submit"
+        tools:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
